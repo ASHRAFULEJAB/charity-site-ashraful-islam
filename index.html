@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Guides Bangla</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" alt="Logo" height="50" />
+        </a>
+
+        <!-- Toggle Button for Mobile View -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav rounded-pill" style="background-color: #ebebeb">
+            <li class="nav-item p-1">
+              <a
+                class="nav-link active px-3 py-2 bg-white rounded-pill text-dark fw-semibold"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mt-1">
+              <a class="nav-link px-3 py-2 text-dark fw-semibold" href="#"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item mt-1">
+              <a class="nav-link px-3 py-2 text-dark fw-semibold" href="#"
+                >Events</a
+              >
+            </li>
+            <li class="nav-item mt-1">
+              <a class="nav-link px-3 py-2 text-dark fw-semibold" href="#"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact and Join Button -->
+        <div class="d-flex align-items-center">
+          <a class="nav-link text-dark me-3 fw-semibold" href="#">Contact</a>
+          <a
+            class="btn px-3 rounded-4 text-white"
+            style="background-color: #1a73e8"
+            href="#"
+            >Join with us</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container text-center my-5">
+      <h1 class="fw-bold" style="font-size: 2.5rem; line-height: 1.5">
+        Local Guides Bangla
+        <span style="color: #4285f4">team</span> leads <br />
+        in <span style="color: #34a853">Bengali</span>, revealing
+        <span style="color: #ea4335">Bangladesh's</span> <br />
+        <span style="color: #e37427">richness</span>.
+      </h1>
+    </div>
+
+    <div class="container my-4">
+      <div class="row justify-content-between align-items-start g-3">
+        <!-- Upcoming Event -->
+        <div class="col-md-6 d-flex justify-content-end">
+          <div
+            class="p-4 rounded-4 mb-5"
+            style="background-color: #1a73e8; width: 386px; height: 336px"
+          >
+            <h3 class="text-white" style="margin-bottom: 120px">
+              Upcoming Event
+            </h3>
+
+            <!-- Stacked Cards -->
+            <div class="position-relative">
+              <!-- Back Card (3rd Layer) -->
+              <div
+                class="rounded-4 position-absolute shadow-sm"
+                style="
+                  width: 250px;
+                  height: 110px;
+                  left: 35px;
+                  top: -35px;
+                  z-index: 1;
+                  transform: scale(0.96);
+                  background-color: #3386f4;
+                  border-radius: 2px;
+                "
+              ></div>
+              <!-- Middle Card (2nd Layer) -->
+              <div
+                class="rounded-4 position-absolute shadow-sm"
+                style="
+                  width: 310px;
+                  height: 110px;
+                  top: -15px;
+                  bottom: 10px;
+                  z-index: 2;
+                  left: 10px;
+                  transform: scale(0.98);
+                  background-color: #65a1f0;
+                "
+              ></div>
+              <!-- Front Card -->
+              <div
+                class="bg-white rounded-4 shadow-lg position-relative"
+                style="width: 340px; height: 110px; z-index: 3; padding: 15px"
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="assets/temple.png"
+                    alt="Kantajew Temple"
+                    class="img-fluid rounded"
+                    style="
+                      width: 80px;
+                      height: 80px;
+                      object-fit: cover;
+                      margin-right: 10px;
+                    "
+                  />
+                  <div>
+                    <h5 class="mb-1">Kantajew Temple</h5>
+                    <p class="text-muted mb-0">
+                      <i class="bi bi-calendar"></i> 12 June, 2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Events -->
+        <div class="col-md-6 d-flex justify-content-start">
+          <div
+            class="p-4 rounded-4 mb-5"
+            style="background-color: #a7f3d0; width: 386px; height: 336px"
+          >
+            <h3 class="text-dark mb-4">Events</h3>
+
+            <!-- Main Event Card -->
+            <div class="position-relative" style="margin-top: 50px">
+              <!-- Back Shadow Effect -->
+              <div
+                class="position-absolute rounded shadow"
+                style="
+                  width: 340px;
+                  height: 140px;
+                  top: 35px;
+                  left: 10px;
+                  background-color: rgba(0, 0, 0, 0.1);
+                  z-index: 1;
+                  transform: rotate(-3deg);
+                "
+              ></div>
+
+              <!-- Front Card -->
+              <div
+                class="bg-white rounded shadow-lg position-relative"
+                style="
+                  width: 310px;
+                  height: 155px;
+                  top: 10px;
+                  z-index: 2;
+                  padding: 15px;
+                  margin-left: 35px;
+                  transform: rotate(3deg);
+                "
+              >
+                <div class="d-flex align-items-start mb-3">
+                  <div
+                    class="rounded d-flex justify-content-center align-items-center"
+                    style="width: 60px; height: 50px"
+                  >
+                    <img
+                      src="assets/events.png"
+                      alt="User Icon"
+                      class="img-fluid"
+                      style="width: 80px; height: 60px"
+                    />
+                  </div>
+                  <div class="ms-3">
+                    <span class="badge bg-dark mb-1">Today</span>
+                    <h5 class="mb-0">Video call</h5>
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <p class="text-muted mb-0">
+                      <i class="bi bi-clock"></i> 13:00 - 13:30<br />
+                      <i class="bi bi-camera-video"></i> Google Meet
+                    </p>
+                  </div>
+                  <button class="btn btn-primary px-4 rounded-pill">
+                    Join
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Countdown Section -->
+    <div class="container mt-5 d-flex justify-content-center">
+      <div
+        class="d-flex align-items-center justify-content-between p-4 rounded-4"
+        style="
+          background: url('assets/Rectangle5.png') no-repeat center center;
+          background-size: cover;
+          color: white;
+          height: 120px;
+          width: 800px; /* Set a smaller width for the entire section */
+        "
+      >
+        <!-- Left Text -->
+        <div>
+          <h4 class="mb-0">See You in</h4>
+        </div>
+
+        <!-- Countdown Section -->
+        <div class="d-flex align-items-center gap-4">
+          <div class="text-center">
+            <h2 class="mb-0" style="font-weight: bold">45</h2>
+            <p class="mb-0" style="font-size: 12px">DAYS</p>
+          </div>
+          <div class="text-center">
+            <h2 class="mb-0" style="font-weight: bold">20</h2>
+            <p class="mb-0" style="font-size: 12px">HOURS</p>
+          </div>
+          <div class="text-center">
+            <h2 class="mb-0" style="font-weight: bold">55</h2>
+            <p class="mb-0" style="font-size: 12px">MINUTES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- community section -->
+    <div class="container my-5">
+      <div class="row justify-content-center align-items-center gx-3">
+        <!-- Community Members Card -->
+        <div class="col-md-3">
+          <div
+            class="p-4 rounded-4 text-center"
+            style="background-color: #fff4e5; width: 100%; height: 250px"
+          >
+            <!-- Images Row -->
+            <div class="d-flex justify-content-center mb-3">
+              <img
+                src="assets/Ellipse1.png"
+                alt="Person 1"
+                class="rounded-circle"
+                style="width: 40px; height: 40px; margin-right: -10px"
+              />
+              <img
+                src="assets/Ellipse2.png"
+                alt="Person 2"
+                class="rounded-circle"
+                style="width: 40px; height: 40px; margin-right: -10px"
+              />
+              <img
+                src="assets/Ellipse3.png"
+                alt="Person 3"
+                class="rounded-circle"
+                style="width: 40px; height: 40px"
+              />
+            </div>
+
+            <!-- Text Content -->
+            <h2 class="mb-1 mt-5" style="font-weight: bold">98,405+</h2>
+            <p class="mb-0" style="color: #4a4a4a">Community Members</p>
+          </div>
+        </div>
+
+        <!-- Join Our Local Community Card -->
+        <div class="col-md-4">
+          <div
+            class="p-4 rounded-4 text-center"
+            style="background-color: #e8f5ff; width: 100%; height: 250px"
+          >
+            <!-- Title -->
+            <h3 class="mb-3">Join our Local Community</h3>
+
+            <!-- Floating Avatars -->
+            <div class="position-relative mb-3" style="height: 100px">
+              <!-- Leftmost Avatar -->
+              <img
+                src="assets/image1.png"
+                alt="Person 1"
+                class="rounded-circle"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  position: absolute;
+                  top: 30%;
+                  left: 10%;
+                "
+              />
+
+              <!-- Left Avatar -->
+              <img
+                src="assets/image2.png"
+                alt="Person 2"
+                class="rounded-circle"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  position: absolute;
+                  top: 90%;
+                  left: 25%;
+                  transform: translateY(-50%);
+                "
+              />
+
+              <!-- Center Avatar -->
+              <img
+                src="assets/image3.png"
+                alt="Person 3"
+                class="rounded-circle"
+                style="
+                  width: 60px;
+                  height: 60px;
+                  position: absolute;
+                  top: 90%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  border: 2px solid white;
+                "
+              />
+
+              <!-- Right Avatar -->
+              <img
+                src="assets/image4.png"
+                alt="Person 4"
+                class="rounded-circle"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  position: absolute;
+                  top: 90%;
+                  right: 25%;
+                  transform: translateY(-50%);
+                "
+              />
+
+              <!-- Rightmost Avatar -->
+              <img
+                src="assets/Ellipse5.png"
+                alt="Person 5"
+                class="rounded-circle"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  position: absolute;
+                  top: 30%;
+                  right: 10%;
+                "
+              />
+            </div>
+
+            <!-- Join Button -->
+            <button class="btn btn-primary px-3 rounded-pill mt-3">
+              Join with us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  posts and meetup-->
+
+    <div class="container my-5">
+      <h2 class="mb-4">Posts & Meetup Recap</h2>
+      <div class="row g-4">
+        <!-- First Card -->
+        <div class="col-md-4">
+          <div
+            class="p-4 rounded-4 position-relative"
+            style="background-color: #4285f4; color: white; height: 250px"
+          >
+            <!-- Icon -->
+            <div
+              class="position-absolute top-0 start-0 m-3 d-flex align-items-center justify-content-center"
+              style="
+                width: 30px;
+                height: 30px;
+                background-color: white;
+                color: #4285f4;
+                border-radius: 50%;
+              "
+            >
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+            <img
+              src="assets/meet.png"
+              alt="Meetup"
+              class="position-absolute end-0 bottom-10"
+              style="
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+                transform: rotate(-1deg); /* Slight tilt */
+                border-bottom-left-radius: 15px; /* Apply rounded corners */
+                clip-path: inset(
+                  0px 0px 1px 0px round 0 0 10px 30px
+                ); /* Bottom curve */
+                object-fit: cover;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+              "
+            />
+
+            <!-- Content -->
+            <div style="margin-top: 128px">
+              <!-- Add top margin to Bengali text -->
+              <h5 class="fw-bold mb-2" style="margin-top: 20px">
+                সোনার বাংলা ট্রিটন
+              </h5>
+              <p style="font-size: 14px; line-height: 1.5; margin-bottom: 0">
+                We pioneer exploration in local language, guiding travelers
+                through culture and hidden gems.
+              </p>
+            </div>
+
+            <!-- Image -->
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div
+            class="p-4 rounded-4 position-relative"
+            style="background-color: #e37427; color: white; height: 250px"
+          >
+            <!-- Content -->
+            <div class="d-flex flex-column h-100">
+              <!-- Text Content -->
+              <div>
+                <h5 class="fw-bold mb-2">Local Guides Experience Sharing</h5>
+                <p style="font-size: 14px; line-height: 1.5; margin-bottom: 5">
+                  We pioneer exploration in local language.
+                </p>
+              </div>
+
+              <!-- Icon -->
+              <div
+                class="mt-auto d-flex justify-content-center align-items-center mt-5"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background-color: white;
+                  color: #fbbc04;
+                  border-radius: 50%;
+                  font-size: 18px;
+                  margin-top: auto;
+                "
+              >
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+              <img
+                src="assets/meet.png"
+                alt="Meetup"
+                class="position-absolute end-0 bottom-5 mt-5"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  margin: 10px;
+                  top: 20px; /* Add space at the top */
+                  transform: rotate(-180deg); /* Slight tilt */
+                  border-bottom-left-radius: 15px; /* Apply rounded corners */
+                  clip-path: inset(
+                    0px 0px 1px 0px round 0 0 10px 30px
+                  ); /* Bottom curve */
+                  object-fit: cover;
+                  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card -->
+        <div class="col-md-4">
+          <div
+            class="p-4 rounded-4 position-relative"
+            style="background-color: #34a853; color: white; height: 250px"
+          >
+            <!-- Icon -->
+            <div
+              class="position-absolute top-0 start-0 m-3 d-flex align-items-center justify-content-center"
+              style="
+                width: 30px;
+                height: 30px;
+                background-color: white;
+                color: #4285f4;
+                border-radius: 50%;
+              "
+            >
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+            <img
+              src="assets/meet.png"
+              alt="Meetup"
+              class="position-absolute end-0 bottom-10"
+              style="
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+                transform: rotate(-1deg); /* Slight tilt */
+                border-bottom-left-radius: 15px; /* Apply rounded corners */
+                clip-path: inset(
+                  0px 0px 1px 0px round 0 0 10px 30px
+                ); /* Bottom curve */
+                object-fit: cover;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+              "
+            />
+
+            <!-- Content -->
+            <div style="margin-top: 128px">
+              <!-- Add top margin to Bengali text -->
+              <h5 class="fw-bold mb-2" style="margin-top: 20px">
+                সোনার বাংলা ট্রিটন
+              </h5>
+              <p style="font-size: 14px; line-height: 1.5; margin-bottom: 0">
+                We pioneer exploration in local language, guiding travelers
+                through culture and hidden gems.
+              </p>
+            </div>
+
+            <!-- Image -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <!-- Section: Our Some Photos & Videos -->
+      <div class="mb-5">
+        <h2 class="mb-4">Our Some Photos & Videos</h2>
+        <div class="d-flex align-items-center">
+          <!-- Main Video/Image -->
+          <div
+            class="rounded-4 position-relative"
+            style="
+              width: 70%;
+              height: 557px;
+              overflow: hidden;
+              margin-right: 20px;
+            "
+          >
+            <img
+              src="assets/thm1.png"
+              alt="Main Video"
+              class="img-fluid w-100 h-100"
+              style="object-fit: cover"
+            />
+            <!-- Play Button -->
+            <div
+              class="position-absolute top-50 start-50 translate-middle"
+              style="
+                width: 60px;
+                height: 60px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <i
+                class="bi bi-play-fill"
+                style="font-size: 30px; color: #4285f4"
+              ></i>
+            </div>
+          </div>
+
+          <!-- Thumbnail List -->
+          <div
+            class="d-flex flex-column justify-content-between"
+            style="width: 25%; height: 557px"
+          >
+            <div
+              class="rounded-4 overflow-hidden"
+              style="height: 124px; margin-bottom: 5px"
+            >
+              <img
+                src="assets/Group13.png"
+                alt="Thumbnail 1"
+                class="img-fluid w-100 h-100"
+                style="object-fit: cover"
+              />
+            </div>
+            <div
+              class="rounded-4 overflow-hidden"
+              style="height: 124px; margin-bottom: 5px"
+            >
+              <img
+                src="assets/Group 14.png"
+                alt="Thumbnail 2"
+                class="img-fluid w-100 h-100"
+                style="object-fit: cover"
+              />
+            </div>
+            <div
+              class="rounded-4 overflow-hidden"
+              style="height: 124px; margin-bottom: 5px"
+            >
+              <img
+                src="assets/Group 15.png"
+                alt="Thumbnail 3"
+                class="img-fluid w-100 h-100"
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="rounded-4 overflow-hidden" style="height: 124px">
+              <img
+                src="assets/Group 16.png"
+                alt="Thumbnail 4"
+                class="img-fluid w-100 h-100"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Meet Our Team -->
+      <div>
+        <h2 class="mb-4">Meet Our Team</h2>
+        <div class="row g-4">
+          <!-- Team Member -->
+          <div class="col-6 col-md-2">
+            <div
+              class="p-2 text-center rounded-4"
+              style="
+                background-color: #f8f9fa;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <img
+                src="assets/Group 14 (1).png"
+                alt="Team Member 1"
+                class="img-fluid rounded-4 mb-2"
+                style="width: 100%; object-fit: cover"
+              />
+              <p class="mb-0">Md Shafiul Bashar</p>
+            </div>
+          </div>
+          <!-- Add More Team Members -->
+          <div class="col-6 col-md-2">
+            <div
+              class="p-2 text-center rounded-4"
+              style="
+                background-color: #f8f9fa;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <img
+                src="assets/Group 15 (1).png"
+                alt="Team Member 2"
+                class="img-fluid rounded-4 mb-2"
+                style="width: 100%; object-fit: cover"
+              />
+              <p class="mb-0">Md Shafiul Bashar</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <div
+              class="p-2 text-center rounded-4"
+              style="
+                background-color: #f8f9fa;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <img
+                src="assets/Group 16 (1).png"
+                alt="Team Member 3"
+                class="img-fluid rounded-4 mb-2"
+                style="width: 100%; object-fit: cover"
+              />
+              <p class="mb-0">Md Shafiul Bashar</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <div
+              class="p-2 text-center rounded-4"
+              style="
+                background-color: #f8f9fa;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <img
+                src="assets/Group 13.png"
+                alt="Team Member 4"
+                class="img-fluid rounded-4 mb-2"
+                style="width: 100%; object-fit: cover"
+              />
+              <p class="mb-0">Md Shafiul Bashar</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <div
+              class="p-2 text-center rounded-4"
+              style="
+                background-color: #f8f9fa;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <img
+                src="assets/Group 13.png"
+                alt="Team Member 4"
+                class="img-fluid rounded-4 mb-2"
+                style="width: 100%; object-fit: cover"
+              />
+              <p class="mb-0">Md Shafiul Bashar</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <div
+              class="p-2 text-center rounded-4"
+              style="
+                background-color: #f8f9fa;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <img
+                src="assets/Group 13.png"
+                alt="Team Member 4"
+                class="img-fluid rounded-4 mb-2"
+                style="width: 100%; object-fit: cover"
+              />
+              <p class="mb-0">Md Shafiul Bashar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-white position-relative"
+      style="background-color: #4285f4; padding: 40px 20px; overflow: hidden"
+    >
+      <!-- Logo -->
+      <div class="mb-4">
+        <img
+          src="assets/logo.png"
+          alt="Logo"
+          class="img-fluid"
+          style="width: 80px; height: 80px"
+        />
+      </div>
+
+      <!-- Subscription Text -->
+      <p class="mb-4" style="font-size: 16px; font-weight: 500">
+        Would you like to get updates on Local Guide straight to your email?
+        Subscribe now.
+      </p>
+
+      <!-- Subscription Input -->
+      <div
+        class="d-flex justify-content-center align-items-center mb-4"
+        style="max-width: 400px; margin: 0 auto"
+      >
+        <input
+          type="email"
+          class="form-control rounded-pill"
+          placeholder="Email"
+          style="padding: 10px 20px; border: none; flex: 1"
+        />
+        <button
+          class="btn btn-primary rounded-circle"
+          style="
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            background-color: white;
+            color: #1a73e8;
+            border: none;
+          "
+        >
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="mb-4">
+        <a href="#" class="text-white mx-2" style="text-decoration: none">
+          <i class="bi bi-facebook" style="font-size: 20px"></i>
+        </a>
+        <a href="#" class="text-white mx-2" style="text-decoration: none">
+          <i class="bi bi-instagram" style="font-size: 20px"></i>
+        </a>
+        <a href="#" class="text-white mx-2" style="text-decoration: none">
+          <i class="bi bi-twitter" style="font-size: 20px"></i>
+        </a>
+        <a href="#" class="text-white mx-2" style="text-decoration: none">
+          <i class="bi bi-linkedin" style="font-size: 20px"></i>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="mb-0" style="font-size: 14px; opacity: 0.8">
+        Copyright © 2025 Md. Asraful Islam Khan. All Rights Reserved.
+      </p>
+
+      <!-- Background Circle -->
+      <div
+        class="position-absolute"
+        style="
+          width: 500px;
+          height: 500px;
+          background-color: #1a73e8;
+          border-radius: 50%;
+          bottom: -200px;
+          right: -200px;
+          z-index: 0;
+        "
+      ></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
