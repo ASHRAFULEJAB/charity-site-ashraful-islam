@@ -95,6 +95,99 @@
       </h1>
     </div>
 
+    <!-- slider section -->
+    <div
+      id="imageSlider"
+      class="carousel slide container rounded-pill"
+      data-bs-ride="carousel"
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#imageSlider"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#imageSlider"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#imageSlider"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner rounded-4">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img
+            src="assets/temple.png"
+            class="d-block w-100"
+            alt="Image 1"
+            style="height: 400px; object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Title for Image 1</h5>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img
+            src="assets/Group13.png"
+            class="d-block w-100"
+            alt="Image 2"
+            style="height: 400px; object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Title for Image 2</h5>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img
+            src="assets/thm1.png"
+            class="d-block w-100"
+            alt="Image 3"
+            style="height: 400px; object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Title for Image 3</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#imageSlider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#imageSlider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <div class="container my-4">
       <div class="row justify-content-between align-items-start g-3">
         <!-- Upcoming Event -->
@@ -304,7 +397,6 @@
               />
             </div>
 
-            <!-- Text Content -->
             <h2 class="mb-1 mt-5" style="font-weight: bold">98,405+</h2>
             <p class="mb-0" style="color: #4a4a4a">Community Members</p>
           </div>
@@ -407,16 +499,35 @@
 
     <!--  posts and meetup-->
 
-    <div class="container my-5">
-      <h2 class="mb-4">Posts & Meetup Recap</h2>
+    <!-- <div class="container my-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Posts & Meetup Recap</h2>
+
+        <div>
+          <button
+            class="btn btn-outline-primary me-2"
+            id="prevBtn"
+            style="width: 40px; height: 40px; border-radius: 50%"
+          >
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button
+            class="btn btn-outline-primary"
+            id="nextBtn"
+            style="width: 40px; height: 40px; border-radius: 50%"
+          >
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
       <div class="row g-4">
-        <!-- First Card -->
         <div class="col-md-4">
           <div
             class="p-4 rounded-4 position-relative"
             style="background-color: #4285f4; color: white; height: 250px"
           >
-            <!-- Icon -->
+            
             <div
               class="position-absolute top-0 start-0 m-3 d-flex align-items-center justify-content-center"
               style="
@@ -447,9 +558,9 @@
               "
             />
 
-            <!-- Content -->
+          
             <div style="margin-top: 128px">
-              <!-- Add top margin to Bengali text -->
+             
               <h5 class="fw-bold mb-2" style="margin-top: 20px">
                 সোনার বাংলা ট্রিটন
               </h5>
@@ -459,7 +570,7 @@
               </p>
             </div>
 
-            <!-- Image -->
+           
           </div>
         </div>
 
@@ -468,9 +579,9 @@
             class="p-4 rounded-4 position-relative"
             style="background-color: #e37427; color: white; height: 250px"
           >
-            <!-- Content -->
+            
             <div class="d-flex flex-column h-100">
-              <!-- Text Content -->
+             
               <div>
                 <h5 class="fw-bold mb-2">Local Guides Experience Sharing</h5>
                 <p style="font-size: 14px; line-height: 1.5; margin-bottom: 5">
@@ -478,7 +589,7 @@
                 </p>
               </div>
 
-              <!-- Icon -->
+              
               <div
                 class="mt-auto d-flex justify-content-center align-items-center mt-5"
                 style="
@@ -515,13 +626,12 @@
           </div>
         </div>
 
-        <!-- Third Card -->
         <div class="col-md-4">
           <div
             class="p-4 rounded-4 position-relative"
             style="background-color: #34a853; color: white; height: 250px"
           >
-            <!-- Icon -->
+            
             <div
               class="position-absolute top-0 start-0 m-3 d-flex align-items-center justify-content-center"
               style="
@@ -552,9 +662,9 @@
               "
             />
 
-            <!-- Content -->
+            
             <div style="margin-top: 128px">
-              <!-- Add top margin to Bengali text -->
+             
               <h5 class="fw-bold mb-2" style="margin-top: 20px">
                 সোনার বাংলা ট্রিটন
               </h5>
@@ -564,11 +674,332 @@
               </p>
             </div>
 
-            <!-- Image -->
+            
           </div>
         </div>
       </div>
+    </div> -->
+
+    <!--  posts and meetup with scroll bar-->
+    <div class="container my-5">
+      <!-- Title and Navigation Buttons -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0">Posts & Meetup Recap</h2>
+        <div>
+          <button
+            id="prevBtn"
+            class="btn btn-outline-primary me-2"
+            style="width: 40px; height: 40px; border-radius: 50%"
+          >
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button
+            id="nextBtn"
+            class="btn btn-outline-primary"
+            style="width: 40px; height: 40px; border-radius: 50%"
+          >
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Cards Container -->
+      <div
+        id="cardWrapper"
+        class="d-flex overflow-hidden position-relative"
+        style="scroll-behavior: smooth"
+      >
+        <div id="cards" class="d-flex" style="gap: 20px">
+          <!-- First Card -->
+          <div class="col-md-4">
+            <div
+              class="p-4 rounded-4 position-relative"
+              style="background-color: #4285f4; color: white; height: 250px"
+            >
+              <div
+                class="position-absolute top-0 start-0 m-3 d-flex align-items-center justify-content-center"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  background-color: white;
+                  color: #4285f4;
+                  border-radius: 50%;
+                "
+              >
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+              <img
+                src="assets/meet.png"
+                alt="Meetup"
+                class="position-absolute end-0 bottom-10"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  margin: 10px;
+                  transform: rotate(-1deg); /* Slight tilt */
+                  border-bottom-left-radius: 15px; /* Apply rounded corners */
+                  clip-path: inset(
+                    0px 0px 1px 0px round 0 0 10px 30px
+                  ); /* Bottom curve */
+                  object-fit: cover;
+                  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+                "
+              />
+
+              <div style="margin-top: 128px">
+                <!-- Add top margin to Bengali text -->
+                <h5 class="fw-bold mb-2" style="margin-top: 20px">
+                  সোনার বাংলা ট্রিটন
+                </h5>
+                <p style="font-size: 14px; line-height: 1.5; margin-bottom: 0">
+                  We pioneer exploration in local language, guiding travelers
+                  through culture and hidden gems.
+                </p>
+              </div>
+
+              <!-- Image -->
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="p-4 rounded-4 position-relative"
+              style="background-color: #e37427; color: white; height: 250px"
+            >
+              <div class="d-flex flex-column h-100">
+                <div>
+                  <h5 class="fw-bold mb-2">Local Guides Experience Sharing</h5>
+                  <p
+                    style="font-size: 14px; line-height: 1.5; margin-bottom: 5"
+                  >
+                    We pioneer exploration in local language.
+                  </p>
+                </div>
+
+                <div
+                  class="mt-auto d-flex justify-content-center align-items-center mt-5"
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background-color: white;
+                    color: #fbbc04;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    margin-top: auto;
+                  "
+                >
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <img
+                  src="assets/meet.png"
+                  alt="Meetup"
+                  class="position-absolute end-0 bottom-5 mt-5"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    margin: 10px;
+                    top: 20px; /* Add space at the top */
+                    transform: rotate(-180deg); /* Slight tilt */
+                    border-bottom-left-radius: 15px; /* Apply rounded corners */
+                    clip-path: inset(
+                      0px 0px 1px 0px round 0 0 10px 30px
+                    ); /* Bottom curve */
+                    object-fit: cover;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+                  "
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Card -->
+          <div class="col-md-4">
+            <div
+              class="p-4 rounded-4 position-relative"
+              style="background-color: #34a853; color: white; height: 250px"
+            >
+              <div
+                class="position-absolute top-0 start-0 m-3 d-flex align-items-center justify-content-center"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  background-color: white;
+                  color: #4285f4;
+                  border-radius: 50%;
+                "
+              >
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+              <img
+                src="assets/meet.png"
+                alt="Meetup"
+                class="position-absolute end-0 bottom-10"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  margin: 10px;
+                  transform: rotate(-1deg); /* Slight tilt */
+                  border-bottom-left-radius: 15px; /* Apply rounded corners */
+                  clip-path: inset(
+                    0px 0px 1px 0px round 0 0 10px 30px
+                  ); /* Bottom curve */
+                  object-fit: cover;
+                  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+                "
+              />
+
+              <div style="margin-top: 128px">
+                <!-- Add top margin to Bengali text -->
+                <h5 class="fw-bold mb-2" style="margin-top: 20px">
+                  সোনার বাংলা ট্রিটন
+                </h5>
+                <p style="font-size: 14px; line-height: 1.5; margin-bottom: 0">
+                  We pioneer exploration in local language, guiding travelers
+                  through culture and hidden gems.
+                </p>
+              </div>
+
+              <!-- Image -->
+            </div>
+          </div>
+          <!-- 4th card -->
+          <div class="col-md-4">
+            <div
+              class="p-4 rounded-4 position-relative"
+              style="background-color: #e37427; color: white; height: 250px"
+            >
+              <div class="d-flex flex-column h-100">
+                <div>
+                  <h5 class="fw-bold mb-2">Local Guides Experience Sharing</h5>
+                  <p
+                    style="font-size: 14px; line-height: 1.5; margin-bottom: 5"
+                  >
+                    We pioneer exploration in local language.
+                  </p>
+                </div>
+
+                <div
+                  class="mt-auto d-flex justify-content-center align-items-center mt-5"
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background-color: white;
+                    color: #fbbc04;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    margin-top: auto;
+                  "
+                >
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <img
+                  src="assets/meet.png"
+                  alt="Meetup"
+                  class="position-absolute end-0 bottom-5 mt-5"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    margin: 10px;
+                    top: 20px; /* Add space at the top */
+                    transform: rotate(-180deg); /* Slight tilt */
+                    border-bottom-left-radius: 15px; /* Apply rounded corners */
+                    clip-path: inset(
+                      0px 0px 1px 0px round 0 0 10px 30px
+                    ); /* Bottom curve */
+                    object-fit: cover;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="p-4 rounded-4 position-relative"
+              style="background-color: #e37427; color: white; height: 250px"
+            >
+              <div class="d-flex flex-column h-100">
+                <div>
+                  <h5 class="fw-bold mb-2">Local Guides Experience Sharing</h5>
+                  <p
+                    style="font-size: 14px; line-height: 1.5; margin-bottom: 5"
+                  >
+                    We pioneer exploration in local language.
+                  </p>
+                </div>
+
+                <div
+                  class="mt-auto d-flex justify-content-center align-items-center mt-5"
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background-color: white;
+                    color: #fbbc04;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    margin-top: auto;
+                  "
+                >
+                  <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <img
+                  src="assets/meet.png"
+                  alt="Meetup"
+                  class="position-absolute end-0 bottom-5 mt-5"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    margin: 10px;
+                    top: 20px; /* Add space at the top */
+                    transform: rotate(-180deg); /* Slight tilt */
+                    border-bottom-left-radius: 15px; /* Apply rounded corners */
+                    clip-path: inset(
+                      0px 0px 1px 0px round 0 0 10px 30px
+                    ); /* Bottom curve */
+                    object-fit: cover;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
     </div>
+
+    <script>
+      const cardWrapper = document.getElementById("cardWrapper");
+      const cards = document.getElementById("cards");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      let scrollAmount = 0; // Tracks how much we've scrolled
+
+      const cardWidth = 320; // Adjust based on card width + gap
+
+      prevBtn.addEventListener("click", () => {
+        // Scroll left
+        if (scrollAmount > 0) {
+          scrollAmount -= cardWidth;
+          cardWrapper.scrollTo({
+            left: scrollAmount,
+            behavior: "smooth",
+          });
+        }
+      });
+
+      nextBtn.addEventListener("click", () => {
+        // Scroll right
+        if (scrollAmount < cards.scrollWidth - cardWrapper.clientWidth) {
+          scrollAmount += cardWidth;
+          cardWrapper.scrollTo({
+            left: scrollAmount,
+            behavior: "smooth",
+          });
+        }
+      });
+    </script>
 
     <div class="container my-5">
       <!-- Section: Our Some Photos & Videos -->
@@ -859,6 +1290,20 @@
         "
       ></div>
     </footer>
+    <!-- <script>
+      // JavaScript for navigation buttons
+      const container = document.getElementById("cardsContainer");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      prevBtn.addEventListener("click", () => {
+        container.scrollBy({ left: -320, behavior: "smooth" });
+      });
+
+      nextBtn.addEventListener("click", () => {
+        container.scrollBy({ left: 320, behavior: "smooth" });
+      });
+    </script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/scripts.js"></script>
