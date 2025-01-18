@@ -1000,6 +1000,37 @@
         }
       });
     </script>
+    <style>
+      /* Default styling (for larger screens) */
+
+      /* Responsive styling for smaller screens */
+      @media (max-width: 768px) {
+        .col-md-4 {
+          flex: 0 0 90%; /* Cards take 90% of the container width */
+        }
+
+        #cards {
+          gap: 10px; /* Reduce the gap between cards */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .col-md-4 {
+          flex: 0 0 100%; /* Cards take full width of the screen */
+        }
+
+        #cards {
+          gap: 5px; /* Reduce the gap further */
+        }
+      }
+      /* Responsive adjustments for images on smaller screens */
+      @media (max-width: 768px) {
+        .col-md-4 img {
+          width: 50%; /* Adjusts to the card width */
+          height: auto; /* Keeps proportions intact */
+        }
+      }
+    </style>
 
     <div class="container my-5">
       <!-- Section: Our Some Photos & Videos -->
